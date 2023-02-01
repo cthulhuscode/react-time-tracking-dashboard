@@ -1,5 +1,4 @@
-.card{
-  width: 327px;
+.card{  
   height: 160px;
   position: relative;
 
@@ -37,15 +36,22 @@
     // &__item-1{                  
     // }
     
-    // &__item-2{     
-      
-    // }
+    &__item-2{     
+      @media screen and (min-width: 1110px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
     
     &__category{      
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
+
+      @media screen and (min-width: 1110px) {
+
+      }
     }
     
     &__hours{
@@ -55,6 +61,15 @@
       font-weight: 300;
       font-size: 32px;
       line-height: 38px;
+
+      @media screen and (min-width: 1110px) {
+        margin-top: 25px;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 56px;
+        line-height: 66px;
+      }
     }
 
     &__menu{
@@ -72,7 +87,20 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 18px;
-      color: #BBC0FF;
+      color: #BBC0FF;     
+      
+      @media screen and (min-width: 1110px) {
+        margin-top: 8px;
+      }
+    }
+
+    @media screen and (min-width: 1110px) {
+      height: 199px;
+      padding: 30px;
     }
   }  
+
+  @media screen and (min-width: 1110px) {
+    height: 100%;
+  }
 }

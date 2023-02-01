@@ -1,5 +1,5 @@
 .navcard{
-  width: 327px;
+  
   height: 203px;
   position: relative;
 
@@ -26,11 +26,16 @@
     &__img{
       width: 64px;
       height: 64px;
+
+      @media screen and (min-width: 1110px) {
+        width: 78px;
+        height: 78px;
+      }
     }
 
-    &__info{
+    // &__info{
       
-    }
+    // }
 
     &__report{
       font-style: normal;
@@ -45,6 +50,24 @@
       font-weight: 300;
       font-size: 24px;
       line-height: 28px;     
+
+      @media screen and (min-width: 1110px) {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 47px;
+      }
+    }
+
+    @media screen and (min-width: 1110px) {
+      height: 354px;
+      padding: 37px 0 0 32px;
+
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;    
+      gap: 43px;  
     }
   }
 
@@ -77,5 +100,21 @@
         color: #fff
       }
     }
+
+    @media screen and (min-width: 1110px) {
+      padding: unset;
+      padding-left: 32px;
+      height: 160px;
+
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 21px;
+    }
+  }
+
+  @media screen and (min-width: 1110px) {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 100%;
   }
 }

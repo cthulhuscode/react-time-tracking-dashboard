@@ -9,3 +9,12 @@ body{
   background-color: #0E1323;
   color: #fff;
 }
+
+@media screen and (min-width: 1110px) {
+  body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
