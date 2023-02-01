@@ -10,13 +10,10 @@ export const timeSlice = createSlice({
     changeFreq: (state, action) => {
       state.freq = action.payload;
     },
-    getHours: (state, action) => {
-      return state[state.freq];
-    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { changeCategory, getHours } = timeSlice.actions;
+export const { changeFreq } = timeSlice.actions;
 
 export default timeSlice.reducer;

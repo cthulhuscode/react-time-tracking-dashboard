@@ -2,13 +2,13 @@ import { images } from "../../../constants";
 import "./Card.scss";
 
 export const Card = ({
-  hour: { category, hours, image, lastWeek, color}
+  hour: { category, hours, lastWeek, color, icon}
 }) => {
   
 
   return (
     <div className='card' style={{backgroundColor: color}}>
-      <img className="card-img" src={image || images.work} alt="work" />
+      <img className="card-img" src={images[icon]} alt="work" />
       <div className='card-info'>
         <div className='card-info__item card-info__item-1'>
           <h3 className='card-info__category'>{category || 'Work'}</h3>

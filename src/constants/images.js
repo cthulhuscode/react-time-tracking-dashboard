@@ -1,7 +1,7 @@
 import ellipsis from "../assets/icon-ellipsis.svg";
 import exercise from "../assets/icon-exercise.svg";
 import play from "../assets/icon-play.svg";
-import self from "../assets/icon-self-care.svg";
+import selfCare from "../assets/icon-self-care.svg";
 import social from "../assets/icon-social.svg";
 import study from "../assets/icon-study.svg";
 import work from "../assets/icon-work.svg";
@@ -11,7 +11,7 @@ export const images = {
   ellipsis,
   exercise,
   play,
-  self,
+  selfCare,
   social,
   study,
   work,
