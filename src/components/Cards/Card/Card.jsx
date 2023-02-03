@@ -3,8 +3,7 @@ import "./Card.scss";
 
 export const Card = ({
   hour: { category, hours, lastWeek, color, icon}
-}) => {
-  
+}) => {  
 
   return (
     <div className='card' style={{backgroundColor: color}}>
